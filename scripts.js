@@ -45,14 +45,14 @@ function scrub(e) {
 // toggle between full-screen and normal-screen mode
 function toggleFullScreen() {
 
-    if (video.requestFullscreen) {
+    if (player.requestFullscreen) {
         player.requestFullscreen();
-    } else if (video.webkitRequestFullScreen) {
+    } else if (player.webkitRequestFullScreen) {
         player.webkitRequestFullScreen();
     } else if (player.mozRequestFullScreen) {
         player.mozRequestFullScreen();
-    } else if (video.msRequestFullscreen) {
-        video.msRequestFullscreen();
+    } else if (player.msRequestFullscreen) {
+        player.msRequestFullscreen();
     }
 }
 
