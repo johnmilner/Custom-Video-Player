@@ -54,6 +54,15 @@ function toggleFullScreen() {
     } else if (player.msRequestFullscreen) {
         player.msRequestFullscreen();
     }
+
+    if (document.exitFullscreen)
+    	document.exitFullscreen();
+	else if (document.webkitExitFullscreen)
+    	document.webkitExitFullscreen();
+	else if (document.mozCancelFullScreen)
+    	document.mozCancelFullScreen();
+	else if (document.msExitFullscreen)
+    	document.msExitFullscreen();
 }
 
 //Hook Up Event Listeners
