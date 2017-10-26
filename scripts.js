@@ -46,9 +46,9 @@ function scrub(e) {
 function toggleFullScreen() {
 
     if (video.requestFullscreen) {
-        video.requestFullscreen();
+        player.requestFullscreen();
     } else if (video.webkitRequestFullScreen) {
-        video.webkitRequestFullScreen();
+        player.webkitRequestFullScreen();
     } else if (player.mozRequestFullScreen) {
         player.mozRequestFullScreen();
     } else if (video.msRequestFullscreen) {
