@@ -118,7 +118,7 @@ body {
   width:50%;
   background:#ffc600;
   flex:0;
-  flex-basis:50%;
+  flex-basis:0%; /*sets scrubber to 0 at beginning */
 }
 
 /* unholy css to style input type="range" */

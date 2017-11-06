@@ -37,6 +37,7 @@ function scrub(e) {
   video.currentTime = scrubTime;
 }
 
+
 /* Hook up the event listners */
 video.addEventListener('click', togglePlay);
 video.addEventListener('play', updateButton);
